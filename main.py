@@ -43,9 +43,9 @@ def main():
     data_path = os.path.join(dataFolder, 'train/Kcatkm_total.csv')
     df_data = pd.read_csv(data_path)
 
-    df_train = pd.read_csv('./datasets/kcat/train/Kcatkm_train.csv')[0:100]
-    df_val = pd.read_csv('./datasets/kcat/train/Kcatkm_val.csv')[0:10]
-    df_test = pd.read_csv('./datasets/kcat/train/Kcatkm_test.csv')[0:10]
+    df_train = pd.read_csv('datasets/kcatkm/train/Kcatkm_train.csv')
+    df_val = pd.read_csv('datasets/kcatkm/train/Kcatkm_val.csv')
+    df_test = pd.read_csv('datasets/kcatkm/train/Kcatkm_test.csv')
 
     # 计算权重
     labels = np.log10(df_data["Y"].values)

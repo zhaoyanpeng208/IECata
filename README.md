@@ -59,7 +59,7 @@ The `datasets` folder contains all experimental data used in IECata.
 The datasets are stored in the `datasets/kcat/train` folder, 
 and the datasets, validation sets and test sets have been 
 divided in 8:1:1 ratio (random seed=100 ).  
-The independent test set is stored in `datasets/independent_test`'`
+The independent test set is stored in `datasets/independent_test`
 and contains 806 samples from the literature collection.
 
 
@@ -67,7 +67,7 @@ and contains 806 samples from the literature collection.
 To train IECata, where we provide the
  basic configurations for all hyperparameters in config.py. 
 ```bash
-python main.py --cfg "configs/IECata.yaml" --data kcat 
+python main.py --cfg configs/IECata.yaml --data kcatkm
 ```
 The training results are saved in the folder`./result/train`. 
 If you want to change the folder, you can change `IECata.yaml`
@@ -76,7 +76,7 @@ Model parameters can be found under the result folder.
 It takes about 5 minutes to run a test on the Kcatkm testset
  (1183 samples) and output the results.
 ```bash 
-python independent_test_attention.py --cfg "configs/independent_test.yaml" --data independent_test 
+python independent_test_attention.py --cfg configs/independent_test.yaml --data independent_test 
 ```
 After predicting with your well trained model, 
 the predicting output will be saved in "result" dictory.  

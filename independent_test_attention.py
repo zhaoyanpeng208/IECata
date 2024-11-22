@@ -54,18 +54,8 @@ def main():
     weights_df = pd.DataFrame(weights, columns=['w'])
     # df_data = pd.concat([df_data, weights_df], axis=1)
     df = pd.concat([df_data, weights_df], axis=1)
-    # 随机化数据集
-    # df = df_data.sample(frac=1, random_state=100)
-    # 计算切分的索引
-    total_rows = len(df)
-    train_end_index = int(total_rows * 0.8)
-    valid_end_index = int(total_rows * 0.9)
-    #df_test = df.iloc[valid_end_index:]
     df_test = df
-    #df_test.to_csv(os.path.join(dataFolder, 'independent_test_lamba0.2_seed10022.csv'))
     df_test = df_test.reset_index(drop=True)
-
-    # df_test = pd.read_csv(r"F:\SecondStudy\DATA\Independent\trCsMSX.csv")
 
     test_dataset = DTIDataset(df_test.index.values, df_test, cfg)
     params = {'batch_size': cfg.SOLVER.BATCH_SIZE, 'shuffle': False, 'num_workers': cfg.SOLVER.NUM_WORKERS,
@@ -74,7 +64,6 @@ def main():
     model = DrugBAN(**cfg).to(device)
     # 加载模型参数
     model.load_state_dict(torch.load("./result/loss_lamba0.2_seed100/best_model_epoch_80.pth"))
-    #model.load_state_dict(torch.load("./result/Ablation_study/revised_seed100_bestTest_FFF/best_model_epoch_90.pth"))
 
     # 将模型设置为评估模式
     model.eval()
