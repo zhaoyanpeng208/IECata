@@ -56,7 +56,7 @@ transformers=4.32.1
 
 ## Datasets
 The `datasets` folder contains all experimental data used in IECata. 
-The datasets are stored in the `datasets/kcat/train` folder, 
+The datasets are stored in the `datasets/kcatkm/train` folder, 
 and the datasets, validation sets and test sets have been 
 divided in 8:1:1 ratio (random seed=100 ).  
 The independent test set is stored in `datasets/independent_test`
