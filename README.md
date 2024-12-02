@@ -36,7 +36,7 @@ conda env create -f environment.yaml
 The required python dependencies are given below.
 ```
 torch=1.12.0
-dgl=1.1.1.cu113=py38_0
+dgl=1.1.1.cu113
 dgllife==0.2.8
 torch-cluster=1.6.0+pt112cu113
 torch-geometric==2.2.0
