@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains the PyTorch implementation of **IECata** framework, as described in paper
  "IECata: Interpretable bilinear attention network and evidential deep learning improve the catalytic efficiency prediction of enzymes".  
- We also provide online prediction tools where users can access [http://mathtc.nscc-tj.cn/CataAI/](http://mathtc.nscc-tj.cn/CataAI/) for direct prediction.
+ We also provide online prediction tools where users can access [http://mathtc.nscc-tj.cn/mpek/#/](http://mathtc.nscc-tj.cn/mpek/#/) for direct prediction.
 
 ## Framework
 ![IECata](IECata.png)
@@ -29,7 +29,7 @@ Download the source code of IECata from GitHub:
 ```bash
 git clone https://github.com/zhaoyanpeng208/IECata.git
 ```
-Install EviDTI dependencies as following, this will take about one to two hours.:
+Install IECata dependencies as following, this will take about one to two hours.:
 ```bash
 conda env create -f environment.yaml
 ```
