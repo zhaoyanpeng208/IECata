@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains the PyTorch implementation of **IECata** framework, as described in paper
  "IECata: Interpretable bilinear attention network and evidential deep learning improve the catalytic efficiency prediction of enzymes".  
- We also provide online prediction tools where users can access [http://mathtc.nscc-tj.cn/mpek/#/](http://mathtc.nscc-tj.cn/mpek/#/) for direct prediction.
+ We also provide online prediction tools where users can access [http://mathtc.nscc-tj.cn/cataai/](http://mathtc.nscc-tj.cn/cataai/) for direct prediction.
 
 ## Framework
 ![IECata](IECata.png)
