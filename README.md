@@ -60,8 +60,9 @@ The datasets are stored in the `datasets/kcatkm/train` folder,
 and the datasets, validation sets and test sets have been 
 divided in 8:1:1 ratio (random seed=100 ).  
 The independent test set is stored in `datasets/independent_test`
-and contains 806 samples from the literature collection.
-
+and contains 806 samples from the literature collection.  
+Scripts for data collection and screening from `BRENDA` and `SABIO-RK` databases
+ are stored in the `Dataset collection` folder
 
 ## Train
 To train IECata, where we provide the
